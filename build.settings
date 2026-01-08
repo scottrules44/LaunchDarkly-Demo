@@ -1,0 +1,33 @@
+--
+-- For more information on build.settings see the Corona Build Guide at:
+-- http://docs.coronalabs.com/guide/distribution/buildSettings/index.html
+--
+
+settings = 
+{
+	--[[
+	orientation =
+	{
+		default = "portrait",
+		supported = { "portrait" }
+	},
+	--]]
+
+	iphone =
+	{
+		xcassets = "Images.xcassets",
+		plist =
+		{
+            OneSignalAppId= "a97e658a-dfe0-11e4-be57-27b89864d443",
+			UILaunchStoryboardName = "LaunchScreen",
+		},
+	},
+	plugins =
+    {
+        ["plugin.launchDarkly"] =
+        {
+            publisherId = "tech.scotth",
+            marketplaceId = "replace with marketplace id"
+        },
+    },
+}
